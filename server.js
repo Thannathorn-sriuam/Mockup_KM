@@ -62,7 +62,7 @@ app.use(cors());
 app.use(express.static('public'));
 
 // เชื่อม MongoDB
-mongoose.connect('mongodb+srv://kitty:bolthackathon@cluster0.gvmbc1r.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect(connect_mongodb)
   .then(() => console.log('✅ Connected to MongoDB'))
   .catch(err => console.error('❌ MongoDB Error:', err));
 
